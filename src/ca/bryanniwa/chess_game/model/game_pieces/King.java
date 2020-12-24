@@ -5,8 +5,8 @@ import javafx.util.Pair;
 import java.util.List;
 
 public class King extends GamePiece{
-    public King(Player player) {
-        super(player);
+    public King(PlayerEnum playerEnum) {
+        super(playerEnum);
     }
 
     @Override

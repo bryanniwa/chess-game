@@ -5,8 +5,8 @@ import javafx.util.Pair;
 import java.util.List;
 
 public class Bishop extends GamePiece{
-    public Bishop(Player player) {
-        super(player);
+    public Bishop(PlayerEnum playerEnum) {
+        super(playerEnum);
     }
 
     @Override

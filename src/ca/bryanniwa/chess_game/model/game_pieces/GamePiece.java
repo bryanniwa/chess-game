@@ -5,20 +5,20 @@ import javafx.util.Pair;
 import java.util.List;
 
 public abstract class GamePiece {
-    private final Player player;
+    private final PlayerEnum playerEnum;
 
-    public GamePiece(Player player) {
-        this.player = player;
+    public GamePiece(PlayerEnum playerEnum) {
+        this.playerEnum = playerEnum;
     }
 
-    public Player getPlayer() {
-        return player;
+    public PlayerEnum getPlayer() {
+        return playerEnum;
     }
 
     public abstract List<Pair<Integer, Integer>> getMoves();
 
     public String toString(char c) {
-        return (player == Player.black ? "b" : "w") + c;
+        return (playerEnum == PlayerEnum.black ? "b" : "w") + c;
     }
 }
 

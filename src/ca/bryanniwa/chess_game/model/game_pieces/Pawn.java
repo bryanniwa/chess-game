@@ -5,8 +5,8 @@ import javafx.util.Pair;
 import java.util.List;
 
 public class Pawn extends GamePiece {
-    public Pawn(Player player) {
-        super(player);
+    public Pawn(PlayerEnum playerEnum) {
+        super(playerEnum);
     }
 
     @Override

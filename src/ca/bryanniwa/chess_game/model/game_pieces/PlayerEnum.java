@@ -1,5 +1,5 @@
 package ca.bryanniwa.chess_game.model.game_pieces;
 
-public enum Player {
+public enum PlayerEnum {
     black, white
 }

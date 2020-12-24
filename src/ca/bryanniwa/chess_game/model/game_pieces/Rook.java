@@ -5,8 +5,8 @@ import javafx.util.Pair;
 import java.util.List;
 
 public class Rook extends GamePiece{
-    public Rook(Player player) {
-        super(player);
+    public Rook(PlayerEnum playerEnum) {
+        super(playerEnum);
     }
 
     @Override
