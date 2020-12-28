@@ -6,10 +6,11 @@ import ca.bryanniwa.chess_game.model.game_pieces.GamePiece;
 import ca.bryanniwa.chess_game.model.game_pieces.GamePieceFactory;
 
 public class GameBoard {
+    public static final int SIZE = 8;
     private final GamePiece[][] gameBoard;
 
     public GameBoard() {
-        gameBoard = new GamePiece[8][8];
+        gameBoard = new GamePiece[SIZE][SIZE];
         init();
     }
 

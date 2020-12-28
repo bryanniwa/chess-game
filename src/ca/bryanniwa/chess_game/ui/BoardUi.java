@@ -1,4 +1,4 @@
-package ca.bryanniwa.chess_game;
+package ca.bryanniwa.chess_game.ui;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
