@@ -1,5 +1,9 @@
 package ca.bryanniwa.chess_game.model;
 
+import javafx.util.Pair;
+
+import java.util.List;
+
 public class LogicManager {
     private final GameBoard gameBoard;
 
@@ -8,7 +12,10 @@ public class LogicManager {
     }
 
     public void start() {
-
+        List<Cell> res = gameBoard.getMoves(0, 2);
+        for (Cell p : res) {
+            System.out.println(p);
+        }
     }
 
     public GameBoard getGameBoard() {

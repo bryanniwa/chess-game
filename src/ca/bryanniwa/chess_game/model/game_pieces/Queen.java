@@ -1,5 +1,6 @@
 package ca.bryanniwa.chess_game.model.game_pieces;
 
+import ca.bryanniwa.chess_game.model.Cell;
 import javafx.util.Pair;
 
 import java.util.List;
@@ -10,7 +11,7 @@ public class Queen extends GamePiece{
     }
 
     @Override
-    public List<Pair<Integer, Integer>> getMoves() {
+    public List<Cell> getMoves(int xPos, int yPos) {
         return null;
     }
 

@@ -4,6 +4,9 @@ import ca.bryanniwa.chess_game.model.game_pieces.PieceEnum;
 import ca.bryanniwa.chess_game.model.game_pieces.PlayerEnum;
 import ca.bryanniwa.chess_game.model.game_pieces.GamePiece;
 import ca.bryanniwa.chess_game.model.game_pieces.GamePieceFactory;
+import javafx.util.Pair;
+
+import java.util.List;
 
 public class GameBoard {
     public static final int SIZE = 8;
@@ -45,10 +48,22 @@ public class GameBoard {
         gameBoard[7][4] = GamePieceFactory.getPiece(PieceEnum.KING, PlayerEnum.white);
     }
 
+    public List<Cell> getMoves(int x, int y) {
+        return gameBoard[x][y].getMoves(x, y);
+    }
+
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
+        res.append("   ");
+        char letter = 65;
+        for (int i = 0; i < 8; i++) {
+            res.append(letter++).append("  ");
+        }
+        res.append("\n");
+        int num = 0;
         for (var boardRow : gameBoard) {
+            res.append(num++).append(" ");
             for (GamePiece piece : boardRow) {
                 if (piece == null) {
                     res.append("**");

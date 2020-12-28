@@ -9,5 +9,6 @@ public class ChessGame {
         TextUi ui = new TextUi();
 
         ui.printBoard(logic.getGameBoard());
+        logic.start();
     }
 }
