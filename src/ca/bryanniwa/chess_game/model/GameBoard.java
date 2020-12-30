@@ -1,10 +1,9 @@
 package ca.bryanniwa.chess_game.model;
 
-import ca.bryanniwa.chess_game.model.game_pieces.PieceEnum;
-import ca.bryanniwa.chess_game.model.game_pieces.PlayerEnum;
 import ca.bryanniwa.chess_game.model.game_pieces.GamePiece;
 import ca.bryanniwa.chess_game.model.game_pieces.GamePieceFactory;
-import javafx.util.Pair;
+import ca.bryanniwa.chess_game.model.game_pieces.PieceEnum;
+import ca.bryanniwa.chess_game.model.game_pieces.PlayerEnum;
 
 import java.util.List;
 
@@ -56,7 +55,7 @@ public class GameBoard {
     public String toString() {
         StringBuilder res = new StringBuilder();
         res.append("   ");
-        char letter = 65;
+        char letter = 'A';
         for (int i = 0; i < 8; i++) {
             res.append(letter++).append("  ");
         }

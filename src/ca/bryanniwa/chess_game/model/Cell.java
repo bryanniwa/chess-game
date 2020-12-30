@@ -11,6 +11,6 @@ public class Cell {
 
     @Override
     public String toString() {
-        return String.valueOf((char) (yPos + 65)) + xPos;
+        return String.valueOf((char) (yPos + 'A')) + xPos;
     }
 }
